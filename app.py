@@ -1,10 +1,11 @@
 import streamlit as st
 import pickle
 import numpy as np
+import pandas as pd
 
 # Load the trained model
 with open("model_student.pkl", "rb") as file:
-    model = pickle.load(model_student.pkl)
+    model = pickle.load(file)
 
 st.set_page_config(page_title="🎓 Student Performance Predictor")
 st.title("🎓 Student Performance Prediction App")
