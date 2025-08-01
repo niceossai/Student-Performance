@@ -4,7 +4,7 @@ import numpy as np
 
 # Load the trained model
 with open("model_student.pkl", "rb") as file:
-    model = pickle.load(file)
+    model = pickle.load(model_student.pkl)
 
 st.set_page_config(page_title="🎓 Student Performance Predictor")
 st.title("🎓 Student Performance Prediction App")
